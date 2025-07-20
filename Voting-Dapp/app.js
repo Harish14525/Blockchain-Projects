@@ -49,9 +49,11 @@ async function vote(name) {
   } catch (err) {
     if (err.code === 4001 || err.code === "ACTION_REJECTED") {
       document.getElementById("status").innerText = "❌ Transaction rejected by user.";
-    } else {
-      document.getElementById("status").innerText = `❌ Unexpected error: ${err.message}`;
-    }
+  } else if (err.message.includes("Already voted")) {
+      document.getElementById("status").innerText = "⚠️ You have already voted.";
+  } else {
+      document.getElementById("status").innerText = "❌ Something went wrong. Check console.";
+  }
     console.error("Vote error:", err);
   }
 }
