@@ -9,6 +9,6 @@ A decentralized voting application built with Solidity, JavaScript, and Ethers.j
 - Ethers.js frontend integration
 
 ## 🔗 Live Demo
-👉 [Click here to try the app]([https://vodap.netlify.app/])
+👉 [Click here to try the app](https://vodap.netlify.app/)
 
 ⚠️ **Note:** Please make sure you have the **MetaMask extension installed** and connected to the **Sepolia Testnet** to interact with the DApp.
